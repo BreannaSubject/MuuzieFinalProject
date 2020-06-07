@@ -17,10 +17,7 @@ namespace MuuzieFinalProject
         List<string> songs = new List<string>();
         Random randGen = new Random();
 
-        private void genreInput_TextChanged(object sender, EventArgs e)
-        {
-            genre = Convert.ToInt32(genreInput.Text);
-        }
+       
 
         public Form1()
         {
@@ -31,5 +28,44 @@ namespace MuuzieFinalProject
         {
 
         }
+
+        private void languageInput_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                language = languageInput.Text;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void genreInput_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                genre = Convert.ToInt32(genreInput.Text);
+            }
+            catch
+            {
+
+            }
+            
+        }
+
+        private void wordsInput_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                words = wordsInput.Text; 
+            }
+            catch
+            {
+
+            }
+        }
+
+
     }
 }

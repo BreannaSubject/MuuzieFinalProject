@@ -36,6 +36,10 @@
             this.popLabel = new System.Windows.Forms.Label();
             this.edmLabel = new System.Windows.Forms.Label();
             this.genreInput = new System.Windows.Forms.TextBox();
+            this.infoLabel2 = new System.Windows.Forms.Label();
+            this.wordsInput = new System.Windows.Forms.TextBox();
+            this.infoLabel3 = new System.Windows.Forms.Label();
+            this.languageInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -109,12 +113,56 @@
             this.genreInput.TabIndex = 6;
             this.genreInput.TextChanged += new System.EventHandler(this.genreInput_TextChanged);
             // 
+            // infoLabel2
+            // 
+            this.infoLabel2.AutoSize = true;
+            this.infoLabel2.Font = new System.Drawing.Font("Gill Sans MT", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLabel2.Location = new System.Drawing.Point(51, 216);
+            this.infoLabel2.Name = "infoLabel2";
+            this.infoLabel2.Size = new System.Drawing.Size(775, 34);
+            this.infoLabel2.TabIndex = 7;
+            this.infoLabel2.Text = "Would you like words in your song? Put Y for Yes and N for No: ";
+            // 
+            // wordsInput
+            // 
+            this.wordsInput.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wordsInput.Location = new System.Drawing.Point(360, 271);
+            this.wordsInput.Name = "wordsInput";
+            this.wordsInput.Size = new System.Drawing.Size(147, 30);
+            this.wordsInput.TabIndex = 8;
+            this.wordsInput.TextChanged += new System.EventHandler(this.wordsInput_TextChanged);
+            // 
+            // infoLabel3
+            // 
+            this.infoLabel3.AutoSize = true;
+            this.infoLabel3.Font = new System.Drawing.Font("Gill Sans MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLabel3.Location = new System.Drawing.Point(-6, 314);
+            this.infoLabel3.Name = "infoLabel3";
+            this.infoLabel3.Size = new System.Drawing.Size(904, 68);
+            this.infoLabel3.TabIndex = 9;
+            this.infoLabel3.Text = "If you would like words in your song, what language would you prefer them in? \r\nP" +
+    "ut E for English or A for Any:";
+            this.infoLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // languageInput
+            // 
+            this.languageInput.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.languageInput.Location = new System.Drawing.Point(360, 405);
+            this.languageInput.Name = "languageInput";
+            this.languageInput.Size = new System.Drawing.Size(147, 30);
+            this.languageInput.TabIndex = 10;
+            this.languageInput.TextChanged += new System.EventHandler(this.languageInput_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.languageInput);
+            this.Controls.Add(this.infoLabel3);
+            this.Controls.Add(this.wordsInput);
+            this.Controls.Add(this.infoLabel2);
             this.Controls.Add(this.genreInput);
             this.Controls.Add(this.edmLabel);
             this.Controls.Add(this.popLabel);
@@ -140,6 +188,10 @@
         private System.Windows.Forms.Label popLabel;
         private System.Windows.Forms.Label edmLabel;
         private System.Windows.Forms.TextBox genreInput;
+        private System.Windows.Forms.Label infoLabel2;
+        private System.Windows.Forms.TextBox wordsInput;
+        private System.Windows.Forms.Label infoLabel3;
+        private System.Windows.Forms.TextBox languageInput;
     }
 }
 
