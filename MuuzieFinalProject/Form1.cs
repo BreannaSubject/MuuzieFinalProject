@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace MuuzieFinalProject
 {
@@ -29,18 +30,6 @@ namespace MuuzieFinalProject
 
         }
 
-        private void languageInput_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                language = languageInput.Text;
-            }
-            catch
-            {
-
-            }
-        }
-
         private void genreInput_TextChanged(object sender, EventArgs e)
         {
             try
@@ -49,9 +38,21 @@ namespace MuuzieFinalProject
             }
             catch
             {
-
+                outputLabel.Text = "You must enter a valid answer.";
             }
-            
+
+        }
+
+        private void languageInput_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                language = languageInput.Text;
+            }
+            catch
+            {
+                outputLabel.Text = "You must enter a valid answer.";
+            }
         }
 
         private void wordsInput_TextChanged(object sender, EventArgs e)
@@ -62,10 +63,38 @@ namespace MuuzieFinalProject
             }
             catch
             {
-
+                outputLabel.Text = "You must enter a valid answer.";
             }
         }
 
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+            switch (genre)
+            {
+                case 1:
+                    Rock();
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                default:
+                    break;
+            }
+            
+        }
 
+        public void Rock()
+        {
+            if (words == "N" || words == "n")
+            {
+                string[] rockNW = { "Epic Swing: Miyavi", "Music: Nightwish", "The Movie: Aerosmith", "Eruption: Van Halen", "Cecilla Ann: Pixies", "Truck: The Fierce and The Dead", "Stressfest: Steve Morse", "Energy: Joe Satriani"};
+                songs.AddRange(rockNW); 
+            }
+        }
+
+        
     }
 }

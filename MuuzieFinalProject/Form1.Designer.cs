@@ -40,6 +40,8 @@
             this.wordsInput = new System.Windows.Forms.TextBox();
             this.infoLabel3 = new System.Windows.Forms.Label();
             this.languageInput = new System.Windows.Forms.TextBox();
+            this.generateButton = new System.Windows.Forms.Button();
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -153,12 +155,34 @@
             this.languageInput.TabIndex = 10;
             this.languageInput.TextChanged += new System.EventHandler(this.languageInput_TextChanged);
             // 
+            // generateButton
+            // 
+            this.generateButton.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateButton.Location = new System.Drawing.Point(385, 508);
+            this.generateButton.Name = "generateButton";
+            this.generateButton.Size = new System.Drawing.Size(94, 41);
+            this.generateButton.TabIndex = 11;
+            this.generateButton.Text = "Generate";
+            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
+            // 
+            // outputLabel
+            // 
+            this.outputLabel.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.outputLabel.Location = new System.Drawing.Point(38, 451);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(806, 39);
+            this.outputLabel.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.outputLabel);
+            this.Controls.Add(this.generateButton);
             this.Controls.Add(this.languageInput);
             this.Controls.Add(this.infoLabel3);
             this.Controls.Add(this.wordsInput);
@@ -192,6 +216,8 @@
         private System.Windows.Forms.TextBox wordsInput;
         private System.Windows.Forms.Label infoLabel3;
         private System.Windows.Forms.TextBox languageInput;
+        private System.Windows.Forms.Button generateButton;
+        private System.Windows.Forms.Label outputLabel;
     }
 }
 
