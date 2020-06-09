@@ -75,10 +75,13 @@ namespace MuuzieFinalProject
                     Rock();
                     break;
                 case 2:
+                    HipHop();
                     break;
                 case 3:
+                    Pop();
                     break;
                 case 4:
+                    EDM();
                     break;
                 default:
                     break;
@@ -92,6 +95,76 @@ namespace MuuzieFinalProject
             {
                 string[] rockNW = { "Epic Swing: Miyavi", "Music: Nightwish", "The Movie: Aerosmith", "Eruption: Van Halen", "Cecilla Ann: Pixies", "Truck: The Fierce and The Dead", "Stressfest: Steve Morse", "Energy: Joe Satriani"};
                 songs.AddRange(rockNW); 
+            }
+            else if (words == "Y" || words == "y" )
+            {
+                if (language == "E" || language == "e")
+                {
+                    string[] rockE = {"Rusted from the Rain: Billy Talent", "Back in Black: ACDC", "Viking Death March: Billy Talent", "Paranoid: Black Sabbath", "Eden: Battle Beast", "Eye of the Storm: One Ok Rock", "Zombie- English Version: Day6"};
+                    songs.AddRange(rockE);
+                }
+                else if (language == "A" || language == "a")
+                {
+                    string[] rockA = { "Torture: Miyavi", "Chase Me: Dreamcatcher", "Shoot Me: Day6", "Day1: Miyavi", "I Wait: Day6", "Ha Na Bi: Miyavi", "Don't Don: Super Junior", "Piri: Dreamcatcher" };
+                    songs.AddRange(rockA);
+                }
+            }
+        }
+
+        public void HipHop()
+        {
+            if (words == "N"|| words == "n") 
+            {
+
+            }
+            else if (words == "Y" || words == "y")
+            {
+                if (language == "E" || language == "e")
+                {
+
+                }
+                else if (language == "A"|| language == "a")
+                {
+
+                }
+            }
+        }
+
+        public void Pop()
+        {
+            if (words == "N" || words == "n")
+            {
+
+            }
+            else if (words == "Y" || words == "y")
+            {
+                if (language == "E" || language == "e")
+                {
+
+                }
+                else if (language == "A" || language == "a")
+                {
+
+                }
+            }
+        }
+
+        public void EDM()
+        {
+            if (words == "N" || words == "n")
+            {
+
+            }
+            else if (words == "Y" || words == "y")
+            {
+                if (language == "E" || language == "e")
+                {
+
+                }
+                else if (language == "A" || language == "a")
+                {
+
+                }
             }
         }
 
