@@ -115,17 +115,20 @@ namespace MuuzieFinalProject
         {
             if (words == "N"|| words == "n") 
             {
-
+                string[] hipHopNW = { "Control-Interlude: Ravi", "In the Shadows: Blank Moody", "Fly Music: Morning Lightmusic", "Make Love: twuan", "Thrones: Chuki Bealse", "Milmo: Homebody", "Samurai: Toby Tranter", "Intro- Escape: A.C.E."};
+                songs.AddRange(hipHopNW);
             }
             else if (words == "Y" || words == "y")
             {
                 if (language == "E" || language == "e")
                 {
-
+                    string[] hipHopE = { "Lose Yourself: Eminem", "Circles: Post Malone", "Old Town Road: Lil' Nas X ft. RM", "End Like That: Kodie Shane", "Lose Control: Missy Elliot ft. Ciara and Fat Man Scoop", "tokyo tea: Shawn Wasabi ft. Spacegirl Gemmy", "Namanana: Lay", "Burnt Rice: Shawn Wasabi ft. Yung Gemmy" };
+                    songs.AddRange(hipHopE);
                 }
                 else if (language == "A"|| language == "a")
                 {
-
+                    string[] hipHopA = { "TML: Cold Bay ft. Ravi", "Still Nirvana: Ravi ft. Xydo + HAON", "Ghost: VIXX LR", "Outro: Tear: BTS", "Tian Di: Kris Wu", "N/S Stray Kids", "Chypher 4: BTS", "El Dorado: Ravi" };
+                    songs.AddRange(hipHopA);
                 }
             }
         }
@@ -134,17 +137,20 @@ namespace MuuzieFinalProject
         {
             if (words == "N" || words == "n")
             {
-
+                string[] popNW = { "Back Again- Instrumental: KNK", "Can't Hold Us: Piano Tribute Players", "Daydream: Float 11", "Yin and Yang: Uyama Hiroto", "Sink to Chair: Stones Taro", "Sol Levante: Tri4th", "Spiritual State: Nujabes ft. Uyama Hiroto", "Chained Up-Insturmental: VIXX" };
+                songs.AddRange(popNW);
             }
             else if (words == "Y" || words == "y")
             {
                 if (language == "E" || language == "e")
                 {
-
+                    string[] popE = { "100 ways: Jackson Wang", "What Do You Mean: Justin Bieber", "Shut Up And Dance: Jason Derulo ft. Lay and NCT 127", "Dj Got Us Falling In Love: Usher", "Give Me Everything: Pitbull ft. Neyo, Nayer and Afrojack", "On the Floor: Jennifer Lopez ft. Pitbull", "Scream: Usher", "Price Tag: Jessie J ft. B.O.B" };
+                    songs.AddRange(popE);
                 }
                 else if (language == "A" || language == "a")
                 {
-
+                    string[] popA = { "" };
+                    songs.AddRange(popA);
                 }
             }
         }
@@ -153,17 +159,20 @@ namespace MuuzieFinalProject
         {
             if (words == "N" || words == "n")
             {
-
+                string[] edmNW = { " " };
+                songs.AddRange(edmNW);
             }
             else if (words == "Y" || words == "y")
             {
                 if (language == "E" || language == "e")
                 {
-
+                    string[] edmE = { " " };
+                    songs.AddRange(edmE);
                 }
                 else if (language == "A" || language == "a")
                 {
-
+                    string[] edmA = { " " };
+                    songs.AddRange(edmA);
                 }
             }
         }
