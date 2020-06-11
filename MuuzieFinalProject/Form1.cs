@@ -69,19 +69,24 @@ namespace MuuzieFinalProject
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+            random = randGen.Next(1, 9);
             switch (genre)
             {
                 case 1:
                     Rock();
+                    ChooseSong();
                     break;
                 case 2:
                     HipHop();
+                    ChooseSong();
                     break;
                 case 3:
                     Pop();
+                    ChooseSong();
                     break;
                 case 4:
                     EDM();
+                    ChooseSong();
                     break;
                 default:
                     break;
@@ -149,7 +154,7 @@ namespace MuuzieFinalProject
                 }
                 else if (language == "A" || language == "a")
                 {
-                    string[] popA = { "" };
+                    string[] popA = { "Follow Me: E-Girls", "Trap: Henry ft. Taemin and Kyuhyun", "Miroh: Stray Kids", "#OOTD: Xydo ft. Coogie", "Rock Your Body: VIXX", "Why So Serious: SHINee", "G-Energy: Generations from Exile Tribe", "Jealous: TVXQ" };
                     songs.AddRange(popA);
                 }
             }
@@ -159,20 +164,33 @@ namespace MuuzieFinalProject
         {
             if (words == "N" || words == "n")
             {
-                string[] edmNW = { " " };
+                string[] edmNW = { "Tron Legacy (End Title) : Daft Punk", "Running Away: Farius","Maia: Kamito Sanclemante, Dabeat", "Nightwalk: Spencer Brown", "End of Line: Daft Punk", "Kino: Dirty South", "Coffee Black: Feed Me", "Full Train: Stones Taro" };
                 songs.AddRange(edmNW);
             }
             else if (words == "Y" || words == "y")
             {
                 if (language == "E" || language == "e")
                 {
-                    string[] edmE = { " " };
+                    string[] edmE = { "Run for your life: Tiffany Young", "That Power: William ft. Justin Beiber", "Bad Guy: Billie Eillish", "Rock Your Body: Black Eyed Peas", "Clarity: Zedd ft. Foxes", "Harder Better Faster Stronger: Daft Punk", "Pump it: Black Eyed Peas", "Hey Mama: David Guetta ft. Nicki Minaj, Bebe Rexha, Afrojack" };
                     songs.AddRange(edmE);
                 }
                 else if (language == "A" || language == "a")
                 {
-                    string[] edmA = { " " };
+                    string[] edmA = { "Road Not Taken: Stray Kids", "Around: Hitchhiker & Taeyong", "Time: Hitchhiker ft. Taeyong, Sunny and Hyoyeon", "Punk Right Now: Hyoyeon ft. 3LAU", "Entrance: Stray Kids", "Take Off: WayV", "Badster: Hyoyeon", "Punch: NCT 127" };
                     songs.AddRange(edmA);
+                }
+            }
+        }
+
+        public void ChooseSong()
+        {
+            for (int i = 0; i < songs.Count(); i++ )
+            {
+                if (i == random)
+                {
+                    outputLabel.Text = songs[i];
+                    break;
+
                 }
             }
         }
