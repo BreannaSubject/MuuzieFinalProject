@@ -58,13 +58,13 @@
             // 
             // infoLabel1
             // 
-            this.infoLabel1.AutoSize = true;
             this.infoLabel1.Font = new System.Drawing.Font("Gill Sans MT", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoLabel1.Location = new System.Drawing.Point(35, 81);
             this.infoLabel1.Name = "infoLabel1";
             this.infoLabel1.Size = new System.Drawing.Size(809, 34);
             this.infoLabel1.TabIndex = 1;
             this.infoLabel1.Text = "Pick the genre of music you would like based on the options below:";
+            this.infoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rockLabel
             // 
@@ -117,13 +117,13 @@
             // 
             // infoLabel2
             // 
-            this.infoLabel2.AutoSize = true;
             this.infoLabel2.Font = new System.Drawing.Font("Gill Sans MT", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoLabel2.Location = new System.Drawing.Point(51, 216);
             this.infoLabel2.Name = "infoLabel2";
             this.infoLabel2.Size = new System.Drawing.Size(775, 34);
             this.infoLabel2.TabIndex = 7;
             this.infoLabel2.Text = "Would you like words in your song? Put Y for Yes and N for No: ";
+            this.infoLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // wordsInput
             // 
@@ -136,7 +136,6 @@
             // 
             // infoLabel3
             // 
-            this.infoLabel3.AutoSize = true;
             this.infoLabel3.Font = new System.Drawing.Font("Gill Sans MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoLabel3.Location = new System.Drawing.Point(-6, 314);
             this.infoLabel3.Name = "infoLabel3";
@@ -144,7 +143,7 @@
             this.infoLabel3.TabIndex = 9;
             this.infoLabel3.Text = "If you would like words in your song, what language would you prefer them in? \r\nP" +
     "ut E for English or A for Any:";
-            this.infoLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.infoLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // languageInput
             // 
@@ -169,11 +168,12 @@
             // outputLabel
             // 
             this.outputLabel.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.outputLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.outputLabel.Location = new System.Drawing.Point(38, 451);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(806, 39);
             this.outputLabel.TabIndex = 12;
+            this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 

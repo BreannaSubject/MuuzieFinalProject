@@ -69,6 +69,20 @@ namespace MuuzieFinalProject
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+
+            infoLabel3.Visible = false;
+            rockLabel.Visible = false;
+            hipHopLabel.Visible = false;
+            popLabel.Visible = false;
+            edmLabel.Visible = false;
+            genreInput.Visible = false;
+            languageInput.Visible = false;
+            wordsInput.Visible = false;
+
+            infoLabel2.Font = new Font ("Gill Sans MT", 20, FontStyle.Bold);
+
+            infoLabel1.Text = "Your Song is:";
+            outputLabel.Text = "Would you like to generate another?";
             random = randGen.Next(1, 9);
             switch (genre)
             {
@@ -132,7 +146,7 @@ namespace MuuzieFinalProject
                 }
                 else if (language == "A"|| language == "a")
                 {
-                    string[] hipHopA = { "TML: Cold Bay ft. Ravi", "Still Nirvana: Ravi ft. Xydo + HAON", "Ghost: VIXX LR", "Outro: Tear: BTS", "Tian Di: Kris Wu", "N/S Stray Kids", "Chypher 4: BTS", "El Dorado: Ravi" };
+                    string[] hipHopA = { "TML: Cold Bay ft. Ravi", "Still Nirvana: Ravi ft. Xydo + HAON", "Ghost: VIXX LR", "Outro: Tear: BTS", "Tian Di: Kris Wu", "N/S: Stray Kids", "Chypher 4: BTS", "El Dorado: Ravi" };
                     songs.AddRange(hipHopA);
                 }
             }
@@ -188,9 +202,8 @@ namespace MuuzieFinalProject
             {
                 if (i == random)
                 {
-                    outputLabel.Text = songs[i];
+                    infoLabel2.Text = songs[i];
                     break;
-
                 }
             }
         }
