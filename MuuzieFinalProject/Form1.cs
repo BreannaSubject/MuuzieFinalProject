@@ -13,7 +13,7 @@ namespace MuuzieFinalProject
 {
     public partial class Form1 : Form
     {
-        int genre, random;
+        int genre, random, start;
         string words, language;
         List<string> songs = new List<string>();
         Random randGen = new Random();
@@ -22,6 +22,7 @@ namespace MuuzieFinalProject
 
         public Form1()
         {
+            start = randGen.Next(1, 9);
             InitializeComponent();
         }
 
@@ -83,7 +84,17 @@ namespace MuuzieFinalProject
 
             infoLabel1.Text = "Your Song is:";
             outputLabel.Text = "Would you like to generate another?";
+
             random = randGen.Next(1, 9);
+
+            while (random == start)
+            {
+                random = randGen.Next(1, 9);
+                break;
+            }
+
+            start = random;
+            
             switch (genre)
             {
                 case 1:
