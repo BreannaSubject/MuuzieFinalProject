@@ -137,9 +137,9 @@
             // infoLabel3
             // 
             this.infoLabel3.Font = new System.Drawing.Font("Gill Sans MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoLabel3.Location = new System.Drawing.Point(-6, 314);
+            this.infoLabel3.Location = new System.Drawing.Point(-7, 304);
             this.infoLabel3.Name = "infoLabel3";
-            this.infoLabel3.Size = new System.Drawing.Size(904, 68);
+            this.infoLabel3.Size = new System.Drawing.Size(904, 98);
             this.infoLabel3.TabIndex = 9;
             this.infoLabel3.Text = "If you would like words in your song, what language would you prefer them in? \r\nP" +
     "ut E for English or A for Any:";

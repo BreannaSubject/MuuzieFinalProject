@@ -81,6 +81,8 @@ namespace MuuzieFinalProject
             wordsInput.Visible = false;
 
             infoLabel2.Font = new Font ("Gill Sans MT", 20, FontStyle.Bold);
+            infoLabel2.ForeColor = Color.RoyalBlue;
+            infoLabel2.BackColor = SystemColors.ControlText;
 
             infoLabel1.Text = "Your Song is:";
             outputLabel.Text = "Would you like to generate another?";
