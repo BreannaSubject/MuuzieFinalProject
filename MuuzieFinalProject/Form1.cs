@@ -13,12 +13,13 @@ namespace MuuzieFinalProject
 {
     public partial class Form1 : Form
     {
+        #region global variables
         int genre, random, start;
         string words, language;
         List<string> songs = new List<string>();
         Random randGen = new Random();
 
-       
+        #endregion
 
         public Form1()
         {
@@ -30,6 +31,8 @@ namespace MuuzieFinalProject
         {
 
         }
+
+        #region inputs
 
         private void genreInput_TextChanged(object sender, EventArgs e)
         {
@@ -43,6 +46,7 @@ namespace MuuzieFinalProject
             }
 
         }
+        
 
         private void languageInput_TextChanged(object sender, EventArgs e)
         {
@@ -67,6 +71,7 @@ namespace MuuzieFinalProject
                 outputLabel.Text = "You must enter a valid answer.";
             }
         }
+        #endregion
 
         private void generateButton_Click(object sender, EventArgs e)
         { 
@@ -108,6 +113,7 @@ namespace MuuzieFinalProject
             
         }
 
+        #region genre methods
         public void Rock()
         {
             if (words == "N" || words == "n")
@@ -228,6 +234,7 @@ namespace MuuzieFinalProject
             }
 
         }
+        #endregion
 
         public void ChooseSong()
         {
