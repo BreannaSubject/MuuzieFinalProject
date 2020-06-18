@@ -35,7 +35,7 @@ namespace MuuzieFinalProject
         #region inputs
 
         private void genreInput_TextChanged(object sender, EventArgs e)
-        {
+        {// input to find genre preference
             try
             {
                 genre = Convert.ToInt32(genreInput.Text);
@@ -49,7 +49,7 @@ namespace MuuzieFinalProject
         
 
         private void languageInput_TextChanged(object sender, EventArgs e)
-        {
+        {// input to find out if they have a language preference
             try
             {
                 language = languageInput.Text;
@@ -61,7 +61,7 @@ namespace MuuzieFinalProject
         }
 
         private void wordsInput_TextChanged(object sender, EventArgs e)
-        {
+        {// input to find out whether they want words in their song or not
             try
             {
                 words = wordsInput.Text; 
@@ -74,7 +74,7 @@ namespace MuuzieFinalProject
         #endregion
 
         private void generateButton_Click(object sender, EventArgs e)
-        { 
+        { //when the button is pushed, the program reads the users inputs and sends them to the genre method they chose
             if (genre > 0 || genre < 4 )
             {
                 random = randGen.Next(1, 9);
@@ -115,7 +115,7 @@ namespace MuuzieFinalProject
 
         #region genre methods
         public void Rock()
-        {
+        {//fills the list with 8 rock songs based on word and language inputs
             if (words == "N" || words == "n")
             {
                 string[] rockNW = { "Epic Swing: Miyavi", "Music: Nightwish", "The Movie: Aerosmith", "Eruption: Van Halen", "Cecilla Ann: Pixies", "Truck: The Fierce and The Dead", "Stressfest: Steve Morse", "Energy: Joe Satriani"};
@@ -146,7 +146,7 @@ namespace MuuzieFinalProject
         }
 
         public void HipHop()
-        {
+        {//fills the list with 8 hiphop songs based on word and language inputs
             if (words == "N"|| words == "n") 
             {
                 string[] hipHopNW = { "Control-Interlude: Ravi", "In the Shadows: Blank Moody", "Fly Music: Morning Lightmusic", "Make Love: twuan", "Thrones: Chuki Bealse", "Milmo: Homebody", "Samurai: Toby Tranter", "Intro- Escape: A.C.E."};
@@ -175,7 +175,7 @@ namespace MuuzieFinalProject
         }
 
         public void Pop()
-        {
+        {//fills the list with 8 pop songs based on word and language inputs
             if (words == "N" || words == "n")
             {
                 string[] popNW = { "Back Again- Instrumental: KNK", "Can't Hold Us: Piano Tribute Players", "Daydream: Float 11", "Yin and Yang: Uyama Hiroto", "Sink to Chair: Stones Taro", "Sol Levante: Tri4th", "Spiritual State: Nujabes ft. Uyama Hiroto", "Chained Up-Insturmental: VIXX" };
@@ -205,7 +205,7 @@ namespace MuuzieFinalProject
         }
 
         public void EDM()
-        {
+        {//fills the list with 8 edm songs based on word and language inputs
             if (words == "N" || words == "n")
             {
                 string[] edmNW = { "Tron Legacy (End Title) : Daft Punk", "Running Away: Farius","Maia: Kamito Sanclemante, Dabeat", "Nightwalk: Spencer Brown", "End of Line: Daft Punk", "Kino: Dirty South", "Coffee Black: Feed Me", "Full Train: Stones Taro" };
@@ -237,7 +237,7 @@ namespace MuuzieFinalProject
         #endregion
 
         public void ChooseSong()
-        {
+        { //chooses a song from the list created for the user and inputs it to the screen
             infoLabel3.Visible = false;
             rockLabel.Visible = false;
             hipHopLabel.Visible = false;
